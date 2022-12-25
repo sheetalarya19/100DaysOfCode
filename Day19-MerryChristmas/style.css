@@ -1,0 +1,80 @@
+body {
+    background:linear-gradient(to top, rgb(174, 20, 20), black 50%);
+    height:100vh;
+    text-align:end;
+    overflow:hidden;
+    font-size:12px;
+    color:rgb(255, 255, 255);
+    font-family:'Montserrat', sans-serif;
+    user-select:none;
+  }
+  body:after {
+    content:'';
+    width:100%;
+    height:10px;
+    position:absolute;
+    background:lightgray;
+    bottom:0;
+    left:0;  
+  }
+  
+  span {
+    font-size:15px;
+    position:absolute;
+    bottom:15px;
+    right:15px; 
+    text-align:right;
+  }
+  #tree_box {
+    position:absolute;
+    bottom:10px;
+    left:50%;
+    transform:translateX(-50%);
+  }
+  #tree_box:before {
+    content:'';
+    width:70px;
+    height:70px;
+    background:#e10808;
+    position:absolute;
+    top:0;
+    left:calc(50% - 35px);
+    transform:translateY(-65%) rotate(5deg);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    border-radius:50%;
+    animation:flash_star 1.5s linear infinite;
+    z-index:2;
+  }
+  @keyframes flash_star {
+    100% { transform:translateY(-65%) rotate(5deg) scale(1.5); opacity:0; }
+  }
+  #tree_box:after {
+    content:'';
+    width:70px;
+    height:70px;
+    background:#f6bd60;
+    position:absolute;
+    top:0;
+    left:calc(50% - 35px);
+    transform:translateY(-65%) rotate(5deg);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  }
+  
+  .bobble:after {
+    content:'';
+    width:100%;
+    height:100%;
+    background:inherit;
+    position:absolute;
+    top:0;
+    left:0;
+    border-radius:inherit;
+    animation:flash 1s linear infinite;
+  }
+  @keyframes flash {
+    100% { transform:scale(1.5); opacity:0; }
+  }
+  
+  .layer:hover {
+    transform:rotate(0deg) !important;
+  }
