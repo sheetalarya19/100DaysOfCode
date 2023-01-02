@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  background: linear-gradient(rgb(153, 234, 54), rgb(91, 183, 25));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 80%;
+  height: 600px;
+  padding: 20px;
+  color: #000;
+  position: relative;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.table {
+ color: #000;
+  background: rgb(255, 240, 30);
+  width: 100%;
+}
+
+.table-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+#book-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  overflow: hidden;
+  word-wrap: break-word;
+  background:darksalmon;
+  color: #000;
+}
+
+#book-list > section {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+
+.btn {
+  background: rgb(255, 30, 0);
+  border: none;
+  color: #fff;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.btn:hover{
+  background: aqua;
+  color: #000;
+}
