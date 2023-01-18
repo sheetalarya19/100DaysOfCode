@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(238, 244, 160);
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.panel-container {
+  background-color: rgb(221, 229, 105);
+  box-shadow: 0 0 8px rgb(206, 218, 115);
+  border-radius: 4px;
+  font-size: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  width: 700px;
+  color: rgb(0, 0, 0);
+}
+
+.ratings-container {
+  display: flex;
+  margin: 20px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 500px;
+}
+
+.rating {
+  flex: 1;
+  padding: 20px;
+  margin: 10px 5px;
+  cursor: pointer;
+}
+
+.rating:hover,
+.rating.active {
+  border-radius: 4px;
+  background-color: #ccc;
+  transition: 1s ease;
+}
+
+.rating .icon {
+  width: 40px;
+  font-size: 5rem;
+  margin-right: 10px;
+}
+
+.rating small {
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  margin: 10px 0 0;
+}
+
+.btn {
+  background: #fff;
+  color: #000;
+  border: 0;
+  border-radius: 4px;
+  padding: 12px 30px;
+  cursor: pointer;
+  outline: 0;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+/* JavaScript */
+.heart {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
